@@ -1,4 +1,4 @@
-const { Socket } = require('dgram');
+const { Socket } = require('socket.io');
 const express = require('express');
 const app = express();
 const server = require('http').Server(app);
