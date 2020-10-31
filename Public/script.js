@@ -7,7 +7,7 @@ var peer = new Peer();
   //  path: '/peerjs',
    // host: '/',
    // port: '443'
-});
+
 
 navigator.mediaDevices.getUserMedia({
     video:true,
