@@ -4,9 +4,10 @@ const myVideo = document.createElement('video');
 myVideo.muted = true;
 let myVideoStream
 var peer = new Peer(undefined ,{
-   path: '/peerjs',
-   host: '/',
-  // port: '443'
+    secure: true ,
+    path: '/peerjs',
+    host: '/',
+    port: 443
 });
 
 navigator.mediaDevices.getUserMedia({
