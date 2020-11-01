@@ -19,7 +19,7 @@ app.get('/' , (req , res) => {
     
 })
  
-app.get('/:room' , (req , res) => {
+app.get('/' , (req , res) => {
     res.render('room' , { roomId: req.params.roomId });
 })
 
