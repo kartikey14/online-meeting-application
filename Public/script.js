@@ -4,7 +4,7 @@ const myVideo = document.createElement('video');
 myVideo.muted = true;
 let myVideoStream
 var peer = new Peer(undefined ,{
-    path: '/peerjs',
+   path: '/peerjs',
    host: '/',
    port: '443'
 });
@@ -95,7 +95,7 @@ const setUnmuteButton = () => {
 
 const setMuteButton = () => {
     const html =`
-    <i class="fas fa-microphone-slash"></i>
+    <i class="fas fa-microphone"></i>
     <span>Mute</span>
     `
     document.querySelector('.main__mute_button').innerHTML = html;
