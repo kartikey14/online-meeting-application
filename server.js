@@ -20,7 +20,7 @@ app.get('/' , (req , res) => {
 })
  
 app.get('/:room' , (req , res) => {
-    res.render('room' , { roomId: req.params.roomId });
+    res.render('room.ejs' , { roomId: req.params.roomId });
 })
 
 io.on('connection' , socket => {
